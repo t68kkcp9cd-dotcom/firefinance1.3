@@ -1,0 +1,74 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Assets\firefinance.ico</ApplicationIcon>
+    <AssemblyTitle>Fire Finance</AssemblyTitle>
+    <AssemblyDescription>Self-hosted personal and household finance application</AssemblyDescription>
+    <AssemblyCompany>Fire Finance Team</AssemblyCompany>
+    <AssemblyProduct>Fire Finance</AssemblyProduct>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+    <Version>1.0.0</Version>
+    <Authors>Fire Finance Team</Authors>
+    <Company>Fire Finance</Company>
+    <Description>Self-hosted personal and household finance application</Description>
+    <Copyright>Copyright © 2024 Fire Finance Team</Copyright>
+    <PackageProjectUrl>https://github.com/t68kkcp9cd-dotcom/firefinance</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/t68kkcp9cd-dotcom/firefinance</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <PublishSingleFile>false</PublishSingleFile>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <PublishTrimmed>false</PublishTrimmed>
+    <TrimMode>copyused</TrimMode>
+    <TrimmerRootAssembly>FireWindows</TrimmerRootAssembly>
+    <UserSecretsId>firefinance-windows-app</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.2" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231008000" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="SocketIOClient" Version="3.0.8" />
+    <PackageReference Include="System.Net.Http.Json" Version="7.0.1" />
+    <PackageReference Include="System.Text.Json" Version="7.0.0" />
+    <PackageReference Include="Windows.Foundation.UniversalApiContract" Version="10.0.19041.0" />
+    <PackageReference Include="WinUIEx" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\firefinance.ico" />
+    <None Remove="Assets\Logo\Logo.png" />
+    <None Remove="Assets\Logo\SmallLogo.png" />
+    <None Remove="Assets\Logo\SplashScreen.png" />
+    <None Remove="Assets\Logo\StoreLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\firefinance.ico" />
+    <Content Include="Assets\Logo\Logo.png" />
+    <Content Include="Assets\Logo\SmallLogo.png" />
+    <Content Include="Assets\Logo\SplashScreen.png" />
+    <Content Include="Assets\Logo\StoreLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,96 @@
+{
+  "short_name": "Fire Finance",
+  "name": "Fire Finance - Personal Finance Management",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "Self-hosted personal and household finance application with real-time collaboration",
+  "categories": ["finance", "productivity", "business"],
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait-primary",
+  "scope": ".",
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.firefinance.ios",
+      "id": "com.firefinance.ios"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dashboard view"
+    },
+    {
+      "src": "screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile dashboard"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Add Transaction",
+      "short_name": "Add",
+      "description": "Quickly add a new transaction",
+      "url": "/transactions/add",
+      "icons": [
+        {
+          "src": "add-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Budget",
+      "short_name": "Budget",
+      "description": "View your current budget",
+      "url": "/budget",
+      "icons": [
+        {
+          "src": "budget-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Pay Bills",
+      "short_name": "Bills",
+      "description": "View and pay your bills",
+      "url": "/bills",
+      "icons": [
+        {
+          "src": "bills-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}
