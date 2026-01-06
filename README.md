@@ -329,7 +329,7 @@ This is a self-hosted application designed for personal use. The codebase is pro
 
 ## 📄 License
 
-This project is provided for self-hosted use and is protected under a Proprietary License. Please review the included documentation for deployment and usage guidelines. 
+This project is provided for self-hosted use and is protected under a Proprietary License. Please review the included documentation for deployment and usage guidelines. - see [LICENSE](LICENSE) file for details.
 
 ## 🔧 Support
 
